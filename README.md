@@ -17,3 +17,6 @@ Summary of key results
 The tumor type classification model achieved an accuracy of 86.4% and the tumor identification model acheived a recall of 99.5%. Improvements of the model accuracy was limited due to limited GPU memory and long training time, but training and validation accuracy graph indicates ample potential for improvements.
 
 How to run the code
+1. Install dependencies with Poetry ----- command: poetry install
+2. Visit https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset to download the image data. * Make sure to change the folder path accordingly to match your path when importing
+3. Run the code
