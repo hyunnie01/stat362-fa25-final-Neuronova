@@ -10,7 +10,14 @@ The goal of this project is to develop a high-performing model capable of accura
 
 High-level description of your model
 
-The baseline model is a convolutional neural network (CNN) with four convolutional blocks followed by a fully connected layer to classify brain MRI images. The structure consists of 4 blocks with progressively increasing filters (32 → 64 → 128 → 128), each followed by max-pooling. Finally, there is a fully connected dense layer of 512 units and a final output layer (softmax and sigmoid activation for two models accordingly). Due to restricted GPU memory and long run time, most of the designs were kept as default. Adam was used as the optimizer with a batch size of 32 and a 15 epochs. The learning rate was kept as default. Images were normalized by scaling the pixel values from [0, 255] → [0, 1]. Data agumentation involved 1) Random rotations (up to 40°), 2) Width shifts (±20%), 3) Height shifts (±20%), 4) Shear transformations, 5) Zoom adjustments, 6) Horizontal flips.
+The baseline model is a convolutional neural network (CNN) with four convolutional blocks followed by a fully connected layer to classify brain MRI images. 
+- The structure consists of 4 blocks with progressively increasing filters (32 → 64 → 128 → 128), each followed by max-pooling.
+- Finally, there is a fully connected dense layer of 512 units and a final output layer (softmax and sigmoid activation for two models accordingly).
+- Due to restricted GPU memory and long run time, most of the designs were kept as default.
+- Adam was used as the optimizer with a batch size of 32 and a 15 epochs.
+- The learning rate was kept as default.
+- Images were normalized by scaling the pixel values from [0, 255] → [0, 1].
+- Data agumentation involved 1) Random rotations (up to 40°), 2) Width shifts (±20%), 3) Height shifts (±20%), 4) Shear transformations, 5) Zoom adjustments, 6) Horizontal flips.
 
 Summary of key results
 
